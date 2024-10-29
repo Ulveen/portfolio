@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Hackaton 5.0 - 2nd Place Winner",
+        "description": "Organized by Codefest and sponsored by the DFinity Foundation, we won 2nd place at Hackathon 5.0 with BingBing. BingBing is a decentralized digital fashion store featuring a virtual try-on option, providing users with a secure and interactive shopping experience.",
+        "year": 2024,
+        "image": "Hackathon_5.0.png"
+    },
+    {
+        "name": "ACA Cloud Certification",
+        "description": "Successfully obtained the ACA certification, demonstrating expertise in cloud infrastructure and Alibaba Cloud services. This industry-recognized credential validates proficiency in cloud computing fundamentals and core cloud solutions, reflecting my commitment to cloud technology excellence.",
+        "year": 2024,
+        "image": "Alibaba_Cloud.png"
+    }
+]

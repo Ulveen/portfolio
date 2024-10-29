@@ -1,10 +1,10 @@
 import { FC, useRef } from 'react';
 import { m, useInView } from 'framer-motion';
 import ProjectImageCarousel from '../components/ProjectImageCarousel';
-import bingbing from '../assets/data/projects/bingbing.json';
+import projectData from '../assets/data/projects.json';
 import SectionTitle from '../components/SectionTitle';
 
-const projects: IProject[] = [bingbing, bingbing, bingbing];
+const projects: IProject[] = projectData;
 
 const ProjectsSection: FC = () => {
 	const projectSection = useRef(null);

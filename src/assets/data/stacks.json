@@ -1,0 +1,37 @@
+{
+    "colors": {
+        "react": "#1166f0",
+        "typescript": "#3178C6",
+        "vite": "#646CFF",
+        "motoko": "#eb3471",
+        "tailwindcss": "#0373fc",
+        "python": "#f78c2f",
+        "chakraui": "#319795",
+        "nestjs": "#8c8c8c",
+        "mysql": "#c9d1d9",
+        "react native": "#1166f0",
+        "expressjs": "#c9d1d9",
+        "zego cloud": "#009688",
+        "nodemon": "#00758f"
+    },
+    "images": {
+        "react": "react.png",
+        "typescript": "typescript.png",
+        "vite": "vite.png",
+        "motoko": "motoko.png",
+        "tailwindcss": "tailwindcss.png",
+        "python": "python.png",
+        "chakraui": "chakraui.png",
+        "nestjs": "nestjs.png",
+        "mysql": "mysql.png",
+        "react native": "react.png",
+        "expressjs": "expressjs.png",
+        "zego cloud": "zegocloud.png",
+        "nodemon": "nodemon.png"
+    },
+    "typography": [
+        "expressjs",
+        "zego cloud",
+        "mysql"
+    ]
+}

@@ -44,11 +44,13 @@ const ProjectImageCarousel: FC<Props> = ({ project, row }) => {
 
 			const container = containerRef.current;
 			const totalWidth = container.scrollWidth;
+
+			if (totalWidth <= 0) return;
+
 			const visibleWidth = container.offsetWidth;
 			const maxScroll = -(totalWidth - visibleWidth);
 
 			const deltaTime = timestamp - startTime;
-
 			let xPosition = -(PIXELS_PER_SECOND * deltaTime) / 1000;
 
 			if (xPosition <= maxScroll) {
@@ -86,7 +88,9 @@ const ProjectImageCarousel: FC<Props> = ({ project, row }) => {
 					className="flex flex-col gap-2"
 					variants={fadeDownVariant}
 				>
-					<p className="text-xl lg:text-2xl font-bold">{project.name}</p>
+					<p className="text-xl lg:text-2xl font-bold">
+						{project.name}
+					</p>
 					<p className="text-sm lg:text-base text-justify">
 						{project.description}
 					</p>
@@ -99,16 +103,18 @@ const ProjectImageCarousel: FC<Props> = ({ project, row }) => {
 						<StackBubble stackName={stack} key={index} />
 					))}
 				</m.div>
-				<m.a
-					className="w-fit self-center lg:self-start"
-					href={project.link}
-					target="_blank"
-					variants={fadeDownVariant}
-				>
-					<button className="text-sm sm:text-base w-fit p-2 hvr-bounce-to-right before:bg-purple-600 font-bold">
-						View on Github
-					</button>
-				</m.a>
+				{project.link && (
+					<m.a
+						className="w-fit self-center lg:self-start"
+						href={project.link}
+						target="_blank"
+						variants={fadeDownVariant}
+					>
+						<button className="text-sm sm:text-base w-fit p-2 hvr-bounce-to-right before:bg-purple-600 font-bold">
+							View on Github
+						</button>
+					</m.a>
+				)}
 			</m.div>
 
 			<m.div
@@ -117,21 +123,21 @@ const ProjectImageCarousel: FC<Props> = ({ project, row }) => {
 			>
 				<m.div
 					ref={containerRef}
-					className="flex items-start w-fit"
+					className="flex items-start w-fit h-full"
 					animate={controls}
 				>
 					{project.images.map((image, index) => (
 						<img
-							className="w-full h-[70%] max-w-2xl flex-shrink-0 object-contain"
+							className="h-full object-contain"
 							key={index}
-							src={image}
+							src={`./projects/${image}`}
 						/>
 					))}
 					{project.images.map((image, index) => (
 						<img
-							className="w-full h-[70%] max-w-2xl flex-shrink-0 object-contain"
+							className="h-full object-contain"
 							key={index}
-							src={image}
+							src={`./projects/${image}`}
 						/>
 					))}
 				</m.div>

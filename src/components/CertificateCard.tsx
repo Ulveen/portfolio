@@ -27,7 +27,7 @@ const CertificateCard: FC<Props> = ({ certificate, row }) => {
 		>
 			<img
 				className="w-full lg:w-1/2 max-h-80 object-cover"
-				src={certificate.image}
+				src={`./certificates/${certificate.image}`}
 				alt=""
 			/>
 			<div className="flex flex-col w-full justify-between gap-4">

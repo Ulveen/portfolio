@@ -136,9 +136,9 @@ const ProfileSection: FC = () => {
 						>
 							I am a dedicated Software Laboratory Assistant with
 							a passion for coding and application development.
-							With a robust background in mentoring and
-							recruitment, I have developed academic assessments
-							that facilitate practical learning for students.
+							With a robust background in mentoring and coding, I
+							have studied various programming languages to
+							facilitate practical learning for students.
 						</m.p>
 						<m.p
 							className="text-[12px] sm:text-base text-center lg:text-justify"
