@@ -1,0 +1,8 @@
+{
+    "react": "./logo/react.png",
+    "typescript": "./logo/typescript.png",
+    "vite": "./logo/vite.png",
+    "motoko": "./logo/motoko.png",
+    "tailwindcss": "./logo/tailwindcss.png",
+    "python": "./logo/python.png"
+}

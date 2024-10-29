@@ -7,7 +7,7 @@ import { Navigator } from './components/Navigator';
 
 const Home: FC = () => {
 	return (
-		<div className="flex flex-col">
+		<div className="flex flex-col scroll-smooth">
 			<Navigator />
 			<ProfileSection />
 			<ProjectsSection />

@@ -115,28 +115,26 @@ const ProjectImageCarousel: FC<Props> = ({ project, row }) => {
 				className="w-2/3 self-center lg:self-start lg:w-[45%] sm:h-2/5 lg:h-1/2 justify-center flex overflow-hidden items-start relative"
 				variants={fadeDownVariant}
 			>
-				<div className="overflow-hidden w-full h-full">
-					<m.div
-						ref={containerRef}
-						className="flex items-start w-fit"
-						animate={controls}
-					>
-						{project.images.map((image, index) => (
-							<img
-								className="w-full h-[70%] max-w-2xl flex-shrink-0 object-contain"
-								key={index}
-								src={image}
-							/>
-						))}
-						{project.images.map((image, index) => (
-							<img
-								className="w-full h-[70%] max-w-2xl flex-shrink-0 object-contain"
-								key={index}
-								src={image}
-							/>
-						))}
-					</m.div>
-				</div>
+				<m.div
+					ref={containerRef}
+					className="flex items-start w-fit"
+					animate={controls}
+				>
+					{project.images.map((image, index) => (
+						<img
+							className="w-full h-[70%] max-w-2xl flex-shrink-0 object-contain"
+							key={index}
+							src={image}
+						/>
+					))}
+					{project.images.map((image, index) => (
+						<img
+							className="w-full h-[70%] max-w-2xl flex-shrink-0 object-contain"
+							key={index}
+							src={image}
+						/>
+					))}
+				</m.div>
 			</m.div>
 		</m.div>
 	);
