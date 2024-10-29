@@ -1,18 +1,21 @@
-import { FC } from 'react'
-import { m } from 'framer-motion'
-import IconGithub from './assets/icons/IconGithub'
-import IconMail from './assets/icons/IconMail'
-import IconLinkedin from './assets/icons/IconLinkedIn'
-import ProfileSection from './sections/ProfileSection'
-import ProjectsSection from './sections/ProjectsSection'
+import { FC } from 'react';
+import ProfileSection from './sections/ProfileSection';
+import ProjectsSection from './sections/ProjectsSection';
+import CertificatesSection from './sections/CertificatesSection';
+import ContactsSection from './sections/ContactsSection';
+import { Navigator } from './components/Navigator';
 
 const Home: FC = () => {
 	return (
-		<div className="flex flex-col gap-8 py-8 scroll-smooth">
+		<div className="flex flex-col">
+			<Navigator />
 			<ProfileSection />
 			<ProjectsSection />
+			<div className="h-[90vh] bg-neutral-900" />
+			<CertificatesSection />
+			<ContactsSection />
 		</div>
-	)
-}
+	);
+};
 
-export default Home
+export default Home;

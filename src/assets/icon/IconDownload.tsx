@@ -16,7 +16,7 @@ function IconDownload(props: React.SVGProps<SVGSVGElement>) {
 				d="M4 14h2v4h12v-4h2v4a2 2 0 01-2 2H6a2 2 0 01-2-2v-4z"
 			/>
 		</svg>
-	)
+	);
 }
 
-export default IconDownload
+export default IconDownload;

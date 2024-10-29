@@ -1,29 +1,44 @@
-import { FC, useRef } from 'react'
-import { m, useScroll, useTransform } from 'framer-motion'
+import { FC, useRef } from 'react';
+import { m, useInView } from 'framer-motion';
+import ProjectImageCarousel from '../components/ProjectImageCarousel';
+import bingbing from '../assets/projects/bingbing/data.json';
+import SectionTitle from '../components/SectionTitle';
+
+const projects: IProject[] = [bingbing, bingbing, bingbing];
 
 const ProjectsSection: FC = () => {
-	const targetRef = useRef(null)
-	const { scrollYProgress } = useScroll({
-		target: targetRef,
-		offset: ['start end', 'end end'],
-	})
-
-	const x = useTransform(scrollYProgress, [0, 1], ['0', '-500vw'])
+	const projectSection = useRef(null);
+	const titleRef = useRef(null);
+	const isVisible = useInView(titleRef);
 
 	return (
-		<section ref={targetRef} className="relative h-[500vh] bg-neutral-900">
-			<div className="sticky top-0 flex h-screen overflow-hidden">
-				<m.div style={{ x }} className="flex">
-					<div className="w-screen h-screen"></div>
-					<div className="w-screen h-screen bg-red-50"></div>
-					<div className="w-screen h-screen bg-green-50"></div>
-					<div className="w-screen h-screen bg-blue-50"></div>
-					<div className="w-screen h-screen bg-purple-50"></div>
-					<div className="w-screen h-screen"></div>
-				</m.div>
+		<section
+			id="projects"
+			className="w-screen relative bg-neutral-900 p-8"
+			ref={projectSection}
+		>
+			<div className="sticky top-0 p-8 z-10 w-full h-fit  bg-neutral-900">
+				<SectionTitle
+					classname="text-white text-center"
+					text="My Projects"
+					isVisible={isVisible}
+					ref={titleRef}
+				/>
 			</div>
+			<m.div className="flex flex-col items-center h-fit">
+				<div className="flex flex-col h-fit w-screen gap-[50vh]">
+					{projects.map((project, idx) => (
+						<ProjectImageCarousel
+							project={project}
+							row={idx}
+							key={idx}
+						/>
+					))}
+					<div className="h-[50vh]" />
+				</div>
+			</m.div>
 		</section>
-	)
-}
+	);
+};
 
-export default ProjectsSection
+export default ProjectsSection;
