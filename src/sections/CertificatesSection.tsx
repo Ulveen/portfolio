@@ -1,7 +1,7 @@
 import { FC, useRef } from 'react';
 import CertificateCard from '../components/CertificateCard';
-import hackaton from '../assets/certificates/hackaton/data.json';
-import alibaba from '../assets/certificates/alibaba/data.json';
+import hackaton from '../assets/data/certificates/hackaton.json';
+import alibaba from '../assets/data/certificates/alibaba.json';
 import { m, useInView, useScroll, useTransform } from 'framer-motion';
 import SectionTitle from '../components/SectionTitle';
 

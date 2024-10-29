@@ -1,7 +1,7 @@
 import { FC, useRef } from 'react';
 import { m, useInView } from 'framer-motion';
 import ProjectImageCarousel from '../components/ProjectImageCarousel';
-import bingbing from '../assets/projects/bingbing/data.json';
+import bingbing from '../assets/data/projects/bingbing.json';
 import SectionTitle from '../components/SectionTitle';
 
 const projects: IProject[] = [bingbing, bingbing, bingbing];

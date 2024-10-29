@@ -1,10 +1,10 @@
 {
     "name": "Bing Bing",
     "images": [
-        "../src/assets/projects/bingbing/1.jpg",
-        "../src/assets/projects/bingbing/2.jpg",
-        "../src/assets/projects/bingbing/3.jpg",
-        "../src/assets/projects/bingbing/4.jpg"
+        "/projects/bingbing/1.jpg",
+        "/projects/bingbing/2.jpg",
+        "/projects/bingbing/3.jpg",
+        "/projects/bingbing/4.jpg"
     ],
     "stacks": [
         "Vite",

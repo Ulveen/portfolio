@@ -47,7 +47,7 @@ const StackBubble: FC<Props> = ({ stackName }) => {
 		>
 			<img
 				className="size-4 aspect object-contain"
-				src={`../src/assets/logo/${stackName}.png`}
+				src={`/logo/${stackName}.png`}
 				alt={stackName}
 				onError={(e) => (e.currentTarget.style.display = 'none')}
 			/>

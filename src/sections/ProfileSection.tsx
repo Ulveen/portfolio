@@ -83,7 +83,7 @@ const ProfileSection: FC = () => {
 				<div className="flex flex-col justify-between gap-4 flex-shrink-0">
 					<m.img
 						className="aspect-square size-52 lg:size-60 rounded-full object-cover"
-						src="../src/assets/me.jpg"
+						src="/me.jpg"
 						alt="Michael Alvin Setiono"
 						variants={fadeDownVariant}
 					/>
