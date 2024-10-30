@@ -29,7 +29,7 @@ const SOCIAL_LINKS: SocialLink[] = [
 		icon: <IconMail className="size-6 sm:size-8" />,
 	},
 	{
-		href: '/Michael Alvin Setiono - CV.pdf',
+		href: './Michael Alvin Setiono - CV.pdf',
 		icon: <IconDownload className="size-6 sm:size-8" />,
 		id: 'download-cv',
 		tooltip: 'Download my CV',
